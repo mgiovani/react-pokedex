@@ -129,7 +129,10 @@ export default class PokemonDetails extends Component {
         const species = res.data;
         let description = '';
         species.flavor_text_entries.some(flavor => {
-            if (flavor.language.name === 'en') {
+            if (
+                flavor.language.name === 'en' &&
+                flavor.version.name === 'omega-ruby'
+            ) {
                 description = flavor.flavor_text;
                 return;
             }
