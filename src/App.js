@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import PokemonDetails from './components/PokemonDetails';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
     return (
